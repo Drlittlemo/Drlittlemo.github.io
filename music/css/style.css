@@ -6,14 +6,14 @@
 #player{
     position: relative;
     top: 80px;
-    left:0px;
+    left:-10px;
 }
 /* 歌曲信息模块 */
 #player-content1{
     position: absolute;
     top:0px;
     left:15px;
-    width:320px;
+    width:305px;
     height:90px;
     padding:0 20px 0 130px;
     background: rgb(167, 205, 248);
@@ -48,7 +48,7 @@
 }
 .current-time,.total-time{
     color: transparent;
-    font-size: 11px;
+    font-size: 12px;
     background-color: #a6d6fa;
     border-radius: 10px;
     transition: 0.3s ease all;
@@ -107,7 +107,7 @@
 
 #player-content2{
     position: relative;
-    width:350px;
+    width:335px;
     height:90px;
     
     background: rgb(168, 224, 255);
