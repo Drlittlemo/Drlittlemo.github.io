@@ -109,37 +109,50 @@
   
   /* 首页文章卡片 */
   #recent-posts>.recent-post-item {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.85);
   }
   
   /* 首页侧栏卡片 */
   #aside-content .card-widget {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
   }
   
   /* 文章页面正文背景 */
   div#post {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
   }
   
   /* 分页页面 */
   div#page {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
   }
   
   /* 归档页面 */
   div#archive {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
   }
   
   /* 标签页面 */
   div#tag {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
   }
   
   /* 分类页面 */
   div#category {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  /* 侧边栏个人信息卡片动态渐变色 */
+  #aside-content > .card-widget.card-info {
+    background: rgba(255, 255, 255, 0.7);
+    background-image: 
+    linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0 0 5px rgb(66, 68, 68);
+    position: relative;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite !important;
   }
   
   /*夜间模式伪类遮罩层透明*/
@@ -550,24 +563,8 @@
       text-shadow: #5636ed 0 0 5px;
     }
   }
-  
-  /* 侧边栏个人信息卡片动态渐变色 */
-  #aside-content > .card-widget.card-info {
-    background: linear-gradient(
-      -45deg,
-      #e8d8b9,
-      #eccec5,
-      #a3e9eb,
-      #bdbdf0,
-      #eec1ea
-    );
-    box-shadow: 0 0 5px rgb(66, 68, 68);
-    position: relative;
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite !important;
-  }
+
+
   @-webkit-keyframes Gradient {
     0% {
       background-position: 0% 50%;
