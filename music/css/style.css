@@ -6,7 +6,7 @@
 #player{
     position: relative;
     top: 80px;
-    left:-10px;
+    left:-9px;
 }
 /* 歌曲信息模块 */
 #player-content1{
@@ -109,7 +109,6 @@
     position: relative;
     width:335px;
     height:90px;
-    
     background: rgb(168, 224, 255);
     border-radius: 20px;
     box-shadow: 0 30px 80px #656565;
