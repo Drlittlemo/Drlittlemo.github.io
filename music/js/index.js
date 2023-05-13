@@ -20,14 +20,13 @@ $(function () {
 
     // 一些计算所需的变量
     var seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0
-    var musicImgsData = ['img/bg.jpg','img/bg2.jpg','img/bg3.jpg']    // 图片地址数组
-    var musicNameData = ['铃芽之旅主题曲','ギターと孤独と蒼い惑星','前へススメ!'];     // 歌曲名数组
-    var artistNameData = ['ラッドウインプス','小孤独和她的乐队','Poppin Party乐队']            // 创作歌手数组
-    var musicUrls = ['http://helloworld.scxc.ink/lyzr_op.mp3','http://helloworld.scxc.ink/guduyaogun_music.mp3','http://helloworld.scxc.ink/PoppinParty_qian.mp3'];   // 歌曲mp3数组
+    var musicImgsData = ['img/bg.jpg','img/bg.jpg','img/bg2.jpg','img/bg3.jpg']    // 图片地址数组
+    var musicNameData = ['铃芽之旅主题曲','铃芽之旅中文主题曲','ギターと孤独と蒼い惑星','前へススメ!'];     // 歌曲名数组
+    var artistNameData = ['ラッドウインプス','周深','小孤独和她的乐队','Poppin Party乐队']            // 创作歌手数组
+    var musicUrls = ['http://littlemo.top/Moss_picture_mian/Music/lyzr_op.mp3','http://littlemo.top/Moss_picture_mian/Music/lyzr_chinese_op.mp3','http://littlemo.top/Moss_picture_mian/Music/guduyaogun_music.mp3','http://littlemo.top/Moss_picture_mian/Music/PoppinParty_qian.mp3'];   // 歌曲mp3数组
     var currIndex = -1;              // 当前播放索引
     var buffInterval = null          // 初始化定时器 判断是否需要缓冲
     var len = musicNameData.length;  // 歌曲长度
-
 
     // 点击 播放/暂停 按钮，触发该函数
     // 作用：根据audio的paused属性 来检测当前音频是否已暂停  true:暂停  false:播放中
